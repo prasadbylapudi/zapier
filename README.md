@@ -1,5 +1,8 @@
 ## Zapier Project
 
+## Schema
+
+![Image](https://github.com/user-attachments/assets/150bef75-a55f-48d5-89cb-bd9689de91c9)
 
 Imagine like in github for any issues or pull requests you wanted to award the users with some bounty.
 

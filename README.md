@@ -1,3 +1,6 @@
+## Zapier Project
+
+
 Imagine like in github for any issues or pull requests you wanted to award the users with some bounty.
 
 whenever a pullrequest or comment on issue like bounry 10$ we will trigger a webhook in the zapier and we will perform all the necessary actions like paying the user that much amount.
@@ -9,11 +12,8 @@ when there is a trigger created and multiple actions created what if some action
 
 
 database transactions - atomicity
-
-![image](assets/image-20250223180537-tqfsuev.png)
-
-
-![image](assets/image-20250223184241-ca99o6f.png)
+![Image](https://github.com/user-attachments/assets/de0c0408-3740-4c98-8325-dc47cb5553eb)
+![Image](https://github.com/user-attachments/assets/bee9f9b1-5c82-4b6d-a707-cb1a6a94671e)
 
 
 ```pgsql
@@ -39,20 +39,8 @@ docker run -p 5432:5432  -e POSTGRES_PASSWORD=mysecretpassword postgres
 
 
 
-
-1. Send the user a verification email, make them verify email before signing them up
-
-* Add a new field in the DB called verify, and only if user is verified should they be ablt to login
-
-2. Let user reset their password through email
-3. Solana reconcilliation side quest - If the users solana txn fails/takes a long time/is submitted to the blockchain, but your node goes down. What happens then? how can u prevent sending them money twice when the worker comes back up
-4. Use react-flow for the UI, make it prettier
-
-* If you are using react-flow, can you create parallel actions.
-
-
 prisma commands :
 
 * npx prisma format
 * mpx prisma migrate dev
-*
+

@@ -42,5 +42,7 @@ docker run -p 5432:5432  -e POSTGRES_PASSWORD=mysecretpassword postgres
 prisma commands :
 
 * npx prisma format
-* mpx prisma migrate dev
+* npx prisma migrate dev
+* npx prisma studio - opens the studio in local to view db and edit.
+
 

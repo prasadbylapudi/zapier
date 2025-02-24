@@ -23,6 +23,12 @@ app.post('/hooks/catch/:userId/:zapId', async(req, res) => {
                     metadata:body,   
                 }
             });
+
+            await tx.zapRunOutbox.create({
+                data:{
+                    zapRunId:run.id,
+                }
+            })
         });
 
         //push it to a queue( redis/ kafka)

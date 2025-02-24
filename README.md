@@ -31,8 +31,8 @@ ZapRun to ZapRunOutbox: One-to-one relationship. Each ZapRun can have one ZapRun
 ```
 
 # transactional outbox pattern
-
-
+https://medium.com/design-microservices-architecture-with-patterns/outbox-pattern-for-microservices-architectures-1b8648dfaa27
+https://microservices.io/patterns/data/transactional-outbox.html
 
 # running postgres through docker
 
@@ -49,3 +49,20 @@ prisma commands :
 * npx prisma studio - opens the studio in local to view db and edit.
 
 
+
+## Processor
+
+ - This Processor is going to take data continuously from the outbox db and push it into the kafka queue.
+
+ ```bash    
+    docker run -p 9092:9092 apache/kafka:3.7.1
+ ```
+
+ ```bash
+ docker exec -it <containerId> /bin/bash
+ ```
+
+  ```
+  - move to the kafka exists folder
+    > cd /opt/kafka/bin/
+ ```

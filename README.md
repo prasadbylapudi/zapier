@@ -43,7 +43,7 @@ docker run -p 5432:5432  -e POSTGRES_PASSWORD=mysecretpassword postgres
 
 
 prisma commands :
-
+https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-prismaPostgres
 * npx prisma format
 * npx prisma migrate dev
 * npx prisma studio - opens the studio in local to view db and edit.
@@ -65,4 +65,10 @@ prisma commands :
   ```
   - move to the kafka exists folder
     > cd /opt/kafka/bin/
+ ```
+
+ ```
+ ./kafka-topics.sh --create --topic zap-events --bootstrap-server localhost:9092
+
+  ./kafka-console-consumer.sh --topic zap-events --from-beginning --bootstrap-server localhost:9092
  ```
